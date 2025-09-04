@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form{
+    width: 600px;
+    background-color: gray;
+    margin: 0 auto;
+     margin-top: 50px;
+}
+div.form-group>label{
+    display: block;
+    text-align: center;
+    
+}
+div.form-group>input{
+    display: block;
+    margin-bottom: 13px;
+    margin-top: 12px;
+    margin-left: 20px;
+
+}
+form>.form-group:first-child{
+    background-color: rgb(5, 143, 143);
+    padding: 20px;    
+}
+input{
+    padding: 6px 3px;
+    width: 90%;
+    
+}
+button{
+    /*comentarios covierte el elemmento en bloque
+      centra el boton
+      cambia el fondo del boton
+      cambia el color de la letra 
+      cambia el borde del boton
+      cambia el espacio intero del boton
+      redondea las esquinas
+      cambia el tamaño de la letra
+      cambia la forma del cursor*/
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(2, 159, 180);
+    color: aliceblue;
+    border: 1px solid  rgb(2, 159, 180);
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 3s, color 3s, border 3s;
+   
+}
+button:hover{
+    /*esta pseudoclase anima el boton al momento de darle click
+      cambia el fondo cuando da click
+      cabia la letra cuando da click
+      cambia el color del borde cuando damos click*/
+    background-color: aliceblue;
+    color: rgb(2, 159, 180);
+    border: 1px solid rgb(12, 92, 167);
+    transition: background-color 8s, color 8s, border 8s;
+}
+
+
