@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(15, 43, 97);
+    background-color: rgb(6, 31, 80);
     width: auto;
     height: auto;
 }
@@ -29,6 +29,7 @@ div.form-group>label{
     color: aliceblue;
     display: block;
     text-align: center;
+    font-size: 20px;
     
 }
 div.form-group>input{
@@ -38,23 +39,26 @@ div.form-group>input{
     margin-left: 20px;
 
 }
-form>.form-group:first-child{
-    background-color: rgb(5, 143, 143);
-    padding: 20px;    
-    border-radius: 10px;
-}
-form>.form-group:nth-child(2){
-     background-color: rgb(5, 53, 143);
-    padding: 20px;    
-    border-radius: 10px;
 
+form>.form-group:nth-child(2){
+    background-color: rgb(6, 5, 87);
+    padding: 20px;    
+    border-radius: 10px;
 }
 form>.form-group:nth-child(3){
-     background-color: rgb(14, 5, 143);
+     background-color: rgb(7, 5, 143);
     padding: 20px;    
     border-radius: 10px;
 
 }
+form>.form-group:nth-child(4){
+     background-color: rgb(23, 13, 158);
+    padding: 20px;    
+    border-radius: 10px;
+    
+
+}
+
 input{
     padding: 6px 3px;
     width: 90%;
