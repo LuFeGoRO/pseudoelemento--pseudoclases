@@ -8,7 +8,25 @@ body{
     width: auto;
     height: auto;
 }
+.cabecera{
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    width: 90%;
+    height: 100%;
+    
+}
+.cabecera div{
+    margin: 10px;
+}
+#barra_lateral{
+    display: none;
+    background-color:  rgb(2, 159, 180);
+    margin-left: 10px;
+    width: 13%;
+}
 h1 a{
+    
     display: block;
     margin: 0 auto;
     background-color: rgb(2, 159, 180);
@@ -17,11 +35,11 @@ h1 a{
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
+    transition: background-color 2s, color 1s, border 3s;
+    border:none;
+    border-radius: 12px;
 }
-div{
-    display: flex;
-    padding: 100px;
-}
+
 button{
     /*comentarios covierte el elemmento en bloque
       centra el boton
@@ -39,8 +57,22 @@ button{
     border: 1px solid  rgb(2, 159, 180);
     padding: 10px 20px;
     border-radius: 12px;
-    font-size: 18px;
+    font-size: 10px;
     cursor: pointer;
-    
+    transition: background-color 2s, color 1s, border 3s;
    
 }
+a:hover{
+background-color: white;
+color: rgb(2, 159, 180) ;
+}
+button:hover{
+background-color: white;
+color: rgb(2, 159, 180) ;
+}
+#barra_lateral:target{
+    display: block;
+}
+ ul:first-child{
+    background-color: rgb(100, 66, 20);
+ }
