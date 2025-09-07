@@ -20,12 +20,10 @@ body{
     margin: 10px;
 }
 #barra_lateral{
-<<<<<<< HEAD
     display: none;
     background-color:  rgb(2, 159, 180);
     margin-left: 10px;
     width: 13%;
-=======
     margin: -15px;
     display: none;
     margin-left: 40px;
@@ -36,7 +34,7 @@ body{
     color:rgb(218, 228, 230);
     background-color: rgb(2, 159, 180);;
     border-radius: 10px;
->>>>>>> desarrollo
+
 }
 h1 a{
     
@@ -53,11 +51,9 @@ h1 a{
     border-radius: 12px;
 }
 
-<<<<<<< HEAD
-button{
-=======
+
 .botones>button{
->>>>>>> desarrollo
+
     /*comentarios covierte el elemmento en bloque
       centra el boton
       cambia el fondo del boton
@@ -79,30 +75,28 @@ button{
     transition: background-color 2s, color 1s, border 3s;
    
 }
-<<<<<<< HEAD
+
 a:hover{
 background-color: white;
 color: rgb(2, 159, 180) ;
 }
-button:hover{
-=======
 .botones a:hover{
 background-color: white;
 color: rgb(2, 159, 180) ;
 }
 .botones>button:hover{
->>>>>>> desarrollo
+
 background-color: white;
 color: rgb(2, 159, 180) ;
 }
 #barra_lateral:target{
     display: block;
 }
-<<<<<<< HEAD
+
  ul:first-child{
     background-color: rgb(100, 66, 20);
  }
-=======
+
 
 .botones>.Menu:first-child{
  background-color: rgb(2, 56, 63) ;
@@ -120,4 +114,3 @@ color: rgb(2, 159, 180) ;
 }
 
 
->>>>>>> desarrollo
