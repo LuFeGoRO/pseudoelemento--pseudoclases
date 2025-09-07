@@ -6,7 +6,7 @@
 
 body {
     background-color: rgb(6, 31, 80);
-    width: 1000px;
+    width: 800px;
     height: auto;
 }
 
@@ -23,10 +23,10 @@ body {
     margin: 10px;
 }
 
-.cuerpo{
-    display:flexbox;
-    margin: 2px auto;
-    background-color:  rgba(11, 106, 119, 0.699);
+.cuerpo {
+    display: flexbox;
+    margin: 0px auto;
+    background-color: rgba(11, 106, 119, 0.699);
     padding: 1%;
     width: 90%;
     height: auto;
@@ -35,34 +35,81 @@ body {
     font-size: 15px;
     margin-left: 14em;
 }
-.comillas{
+
+.comillas {
     border: 2px solid black;
     margin: 10px;
 }
-.icono{
+
+.icono {
     border: 2px solid black;
     margin: 10px;
 }
-.img{
+
+.img {
     border: 2px solid black;
     margin: 10px;
 
 }
-.img>img{
+
+.btn {
+    border: 2px solid black;
+    margin: 10px;
+    display: flex;
+}
+
+.btn .elim>button {
     position: relative;
-    left: 110px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(2, 159, 180);
+    color: aliceblue;
+    border: 1px solid rgb(2, 159, 180);
+    padding: 15px 10%;
+    border-radius: 12px;
+    font-size: 30px;
+    cursor: pointer;
+    top: 0;
+    left: 100px;
+}
+
+.btn .Enviar>button {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(2, 159, 180);
+    color: aliceblue;
+    border: 1px solid rgb(2, 159, 180);
+    padding: 15px 10%;
+    border-radius: 12px;
+    font-size: 30px;
+    cursor: pointer;
+    top: 0;
+    left: 350px;
+}
+
+div.nav_list {
+    position: fixed;
+}
+
+.img>img {
+    position: relative;
+    left: 20px;
     top: 2px;
     transition: all 0.3s ease;
 }
-.icono>input{
+
+.icono>input {
     width: 95%;
     height: 30px;
 }
+
 #barra_lateral {
     margin: -15px;
     display: none;
-    margin-left: 40px;
-    width: 13%;
+    margin-left: 5px;
+    width: 15%;
+    top: 75px;
 
 }
 
@@ -102,9 +149,10 @@ li>a {
     border: none;
     border-radius: 12px;
 }
-.botones{
-position: relative;
-z-index: 1;
+
+.botones {
+    position: relative;
+    z-index: 1;
 }
 
 .botones>button {
@@ -127,7 +175,8 @@ z-index: 1;
     border-radius: 12px;
     font-size: 10px;
     cursor: pointer;
-    
+    left: 140px;
+
 
 }
 
@@ -137,88 +186,105 @@ z-index: 1;
     color: rgb(2, 159, 180);
 }
 
+.btn .elim>button:hover {
+    background-color: white;
+    color: rgb(2, 159, 180);
+}
+
+.btn .Enviar>button:hover {
+    background-color: white;
+    color: rgb(2, 159, 180);
+}
+
 .botones>button:hover {
     background-color: white;
     color: rgb(2, 159, 180);
 }
+
 
 #barra_lateral:target {
     display: block;
     position: fixed;
 }
 
-.botones>.Menu:first-child {
+.nav_list:first-child {
     background-color: rgb(2, 56, 63);
 }
 
-.botones>.Menu a:first-child {
+.nav_list a:first-child {
     background-color: rgb(2, 56, 63);
 }
 
-.botones>.Menu:hover {
+.nav_list:hover {
     background-color: white;
     color: rgb(2, 159, 180);
 }
 
-.botones>.Menu a:hover {
+.nav_list a:hover {
     background-color: white;
     color: rgb(2, 159, 180);
 }
 
 li>a:hover {
-    color:rgb(10, 24, 26) ;
+    color: rgb(10, 24, 26);
     background-color: rgb(2, 56, 63);
     padding: 10%;
 }
 
-li>a::before{
-    content: "👉" ;
-    
+li>a::before {
+    content: "👉";
+
 }
-.Subir>a::before{
+
+.Subir>a::before {
     content: "👆";
 }
+
 nav li::after {
-           content: "";
-           display: block;
-           width: 100%;
-           height: 1px;
-           background: rgba(255, 255, 255, 0.4);
-           margin-top: 4px;
-        }
-nav li:last-child::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.4);
+    margin-top: 4px;
+}
+
+nav li:last-child::after {
     display: none;
 }
-.botones::after{
+
+.botones::after {
     content: "";
     position: absolute;
     top: 6px;
-    left: 6px;
+    left: 145px;
     width: 100%;
     height: 100%;
-    background:rgba(9, 151, 156, 0.295);
+    background: rgba(9, 151, 156, 0.295);
     border-radius: 12px;
     z-index: -1;
 }
 
-.comillas::before{
+.comillas::before {
     content: "❝";
     font-size: 4em;
-    color:black;
+    color: black;
     position: relative;
-    
-    
-    
+
+
+
 }
-.comillas::after{
+
+.comillas::after {
     content: "❞";
     font-size: 4em;
-    color:black;
+    color: black;
     position: relative;
-    margin-left: 13em;
-    
+    margin-left: 10em;
+
 }
-.icono::before{
+
+.icono::before {
     content: "🐠" "🐟" "🦀" "🦐";
     font-size: 2em;
     left: 10px;
@@ -226,3 +292,33 @@ nav li:last-child::after{
     transform: translateY(-50%);
 }
 
+.contenido {
+    position: relative;
+    margin: o auto;
+    width: 100%;
+    border: 2px black solid;
+
+}
+
+.card1 {
+    width: 300px;
+    background-color: rgb(22, 4, 122);
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 20px;
+    box-shadow: -20px -20px 0px 0px #0d66db;
+    border-radius: 10px;
+    z-index: 2;
+
+}
+
+.card2 {
+    width: 300px;
+    background-color: rgb(14, 56, 35);
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 20px;
+    box-shadow: -20px -20px 0px 0px #08192e;
+    border-radius: 10px;
+    z-index: 2;
+}
