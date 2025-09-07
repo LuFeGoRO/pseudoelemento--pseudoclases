@@ -229,7 +229,27 @@ h1 a {
 }
 
 
-.botones>button{}
+.botones>button{ 
+     /*comentarios covierte el elemmento en bloque
+      centra el boton
+      cambia el fondo del boton
+      cambia el color de la letra 
+      cambia el borde del boton
+      cambia el espacio intero del boton
+      redondea las esquinas
+      cambia el tamaño de la letra
+      cambia la forma del cursor*/
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(2, 4, 88);
+    color: var(--tex-color);
+    border: 1px solid rgb(2, 4, 88);
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 10px;
+    cursor: pointer;
+    left: 140px;}
 
 
 li>a {
@@ -276,6 +296,27 @@ li>a {
 
 
 }
+
+li>a {
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(2, 4, 88);
+    color: var(--tex-color);
+    border: 1px solid rgb(2, 4, 88);
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
+    transition: background-color 2s, color 1s, border 3s;
+    border: none;
+    border-radius: 12px;
+}
+
+.botones {
+    position: relative;
+    z-index: 1;
+}
+
+
 
 
 
