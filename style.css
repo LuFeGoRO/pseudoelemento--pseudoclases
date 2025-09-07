@@ -1,38 +1,63 @@
 * {
+    /*reseteo la pagina*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
+    /*
+    pongo una variable de fondo
+    establesco el ancho de la pagina
+    pongo la altura en automatico
+    */
     background-image: var(--color-primario);
     width: 800px;
     height: auto;
-    
+
 }
-@media(prefers-color-scheme: light){
-    :root{
-        --bg-color:linear-gradient(90deg, #0c1b32, #122e60, #1678a7);;
+
+@media(prefers-color-scheme: light) {
+
+    /*
+    valores del modo claro
+    */
+    :root {
+        /*variables de fondo y color*/
+        --bg-color: linear-gradient(90deg, #0c1b32, #122e60, #1678a7);
+        ;
         --tex-color: rgb(166, 180, 180);
     }
 }
 
-@media(prefers-color-scheme: dark){
-    :root{
-        --bg-color:linear-gradient(90deg, #161122,#00273e,#161122,#00273e,#161122);
+@media(prefers-color-scheme: dark) {
+
+    /*valores del modo oscuro*/
+    :root {
+        /*variables de fondo y color*/
+        --bg-color: linear-gradient(90deg, #161122, #00273e, #161122, #00273e, #161122);
         --tex-color: rgb(166, 180, 180);
     }
 
 }
- :root{
+
+:root {
+    /*color declarados en variables*/
     --color-primario: linear-gradient(90deg, #0c1b32, #122e60, #1678a7);
     --colo--secundario: linear-gradient(90deg, #151a22, #0944ac, #063146);
-    --color--tema:linear-gradient(90deg, #161122,#00273e,#161122,#00273e,#161122);
+    --color--tema: linear-gradient(90deg, #161122, #00273e, #161122, #00273e, #161122);
     --color--fellback: rgb(8, 100, 54)
 }
 
 
 .cabecera {
+    /*
+uso display flex para que el contenido salga un boton al lado del otro
+centro los botones
+pongo un espacio interno de 10 pixeles
+establezco el ancho al 90%
+y la altura al 100%
+    */
     display: flex;
     margin: 0 auto;
     padding: 10px;
@@ -42,64 +67,100 @@ body {
 }
 
 .cabecera div {
+    /*
+    establezco un magen de 10 px
+    Establece los márgenes laterales automáticos para centrar el elemento horizontalmente
+    */
     margin: 10px;
 }
 
 .cuerpo {
+    /* Establesco el contenedor como un
+     flexbox para alinear elementos hijos.
+      Establesco los márgenes laterales automáticos 
+    para centrar el elemento horizontalmente 
+     Asigno un gradiente o color de fondo a partir de 
+     una variable
+     Añado un relleno (espacio interno) del 1% del tamaño 
+     del contenedor
+     Establece el ancho del contenedor al 90% del ancho de su contenedor padre
+     El alto del contenedor se ajusta automáticamente al contenido.
+     Asigna el color del texto a partir de una variable CSS llamada '--tex-color'
+     Hace que el texto dentro del contenedor se muestre en cursiva
+     Define el tamaño de la fuente del texto en 15 píxeles.
+    Sobrescribe el 'margin: 0 auto; y establece un margen izquierdo
+     fijo de 14em.*/
     display: flexbox;
     margin: 0px auto;
-   background-image: var(--colo--secundario);
+    background-image: var(--colo--secundario);
     padding: 1%;
     width: 90%;
     height: auto;
-    color:var(--tex-color);
+    color: var(--tex-color);
     font-style: italic;
     font-size: 15px;
     margin-left: 14em;
 }
 
-.comillas {
+.comillas { /*
+    establece 2 pixeles de borde negr u un esapacio de margenes de 10px*/
     border: 2px solid black;
     margin: 10px;
 }
 
-.icono {
+.icono {/*
+    establece 2 pixeles de borde negr u un esapacio de margenes de 10px*/
     border: 2px solid black;
     margin: 10px;
 }
 
 
-.img {
+.img {/*
+    establece 2 pixeles de borde negr u un esapacio de margenes de 10px*/
     border: 2px solid black;
     margin: 10px;
 
 }
 
 
-.btn {
+.btn {/*
+    establece 2 pixeles de borde negr u un esapacio de margenes de 10px mas
+     el uso de display flex*/
     border: 2px solid black;
     margin: 10px;
     display: flex;
 }
 
 .contenido {
-
+/*
+    establece 2 pixeles de borde negr u un esapacio de margenes de 10px*/
     border: 2px solid black;
     margin: 10px;
 
 }
 
-.pros_trans { 
+.pros_trans {/*
+    estableve un margen de 10px y usa un display en flex*/
     margin: 10px;
     display: flex;
 }
 
 .btn .elim>button {
+    /* el boton se puede mover sin afectar los demas elementos
+    los elementetos estan en bloque
+    centra hoizontalmente
+    el fondo del boton
+    la letra del boton
+    agrega esos puntos de espacio interno
+    pone las esquina redondas
+    cambia la medida o el tamaño de la letra
+    establece su movimiento hacia arriba en 0
+    100 puntos de movimientos hacia la iquierda*/
     position: relative;
     display: block;
     margin: 0 auto;
     background-color: rgb(2, 4, 88);
-    color:var(--tex-color);
+    color: var(--tex-color);
     border: 1px solid rgb(2, 4, 88);
     padding: 15px 10%;
     border-radius: 12px;
@@ -108,20 +169,35 @@ body {
     top: 0;
     left: 100px;
 }
-.ult_punt{
-     border: 2px solid black;
+
+.ult_punt {
+
+    /*establece 2 pixeles de borde negro un esapacio de margenes de 10px
+    con espacio interno automatico*/
+    border: 2px solid black;
     margin: 10px;
     padding: auto;
 
- }
- 
+}
+
 
 .btn .Enviar>button {
+    /*el boton se puede mover sin afectar los demas elementos
+    los elementetos estan en bloque
+    centra hoizontalmente
+    el fondo del boton
+    la letra del boton
+    cambia el borde
+    agrega esos puntos de espacio interno
+    pone las esquina redondas
+    cambia la medida o el tamaño de la letra
+    establece su movimiento hacia arriba en 0
+    350 puntos de movimientos hacia la iquierda*/
     position: relative;
     display: block;
     margin: 0 auto;
     background-color: rgb(2, 4, 88);
-    color:var(--tex-color);
+    color: var(--tex-color);
     border: 1px solid rgb(2, 4, 88);
     padding: 15px 10%;
     border-radius: 12px;
@@ -132,10 +208,15 @@ body {
 }
 
 div.nav_list {
+    /*fija la posicion*/
     position: fixed;
 }
 
 .img>img {
+    /*usa un posicion relativa
+    mueve hacia la isquierda 20 pixeles
+    y hacia arriba 2 pielesx
+    transision de 0.3 segundos*/
     position: relative;
     left: 20px;
     top: 2px;
@@ -143,10 +224,15 @@ div.nav_list {
 }
 
 .icono>input {
+    /*establece anchura y altura*/
     width: 95%;
     height: 30px;
 }
-.card1 {
+
+.card1 {/*
+    establece los valores de la tarjeta nuemro 1
+
+    */
     width: 300px;
     background-color: var(--color--fellback);
     margin: 0 auto;
@@ -159,6 +245,7 @@ div.nav_list {
 }
 
 .card2 {
+    /*establece los valores de la tarjeta nuemro 2*/
     width: 300px;
     background-image: var(--color--tema);
     margin: 0 auto;
@@ -168,9 +255,12 @@ div.nav_list {
     border-radius: 10px;
     z-index: 2;
 }
-.card3{
-    --card-padding:20px;
-    --card-border-radius:10px;
+
+.card3 {
+    /*establece los valores de la tarjeta nuemro */
+    /*tambien se usan una variables creadas dentro de la misma card */
+    --card-padding: 20px;
+    --card-border-radius: 10px;
 
     width: 300px;
     background-image: var(--colo--secundario);
@@ -183,20 +273,13 @@ div.nav_list {
     top: 15%;
     left: 82%;
     transform: translate(-50%, -50%)
-    
-
 }
-.card4{
-     width: 300px;
-    background-image: var(--colo--secundario);
-    margin: 0 auto;
-    margin-top: 60px;
-    padding: 20px;
-    box-shadow: -20px -20px 0px 0px #6d0ddb;
-    border-radius: 10px;
- }
+
+
 
 #barra_lateral {
+    /*establece el margen el modo oculto y
+     la poscicion de la barra lateral*/
     margin: -15px;
     display: none;
     margin-left: 5px;
@@ -205,19 +288,20 @@ div.nav_list {
 
 }
 
-#barra_lateral>ul {
+#barra_lateral>ul {/*da unos estilod a la barra lateral*/
     color: var(--tex-color);
-    background-color:rgb(2, 4, 88);
+    background-color: rgb(2, 4, 88);
     padding: 10px;
     border-radius: 10px;
     list-style: none;
 }
 
 h1 a {
-
+    /* establece las normas que se tendrean todos los elementos a
+    que sean hijos de un h1*/
     display: block;
     margin: 0 auto;
-    background-color:rgb(2, 4, 88);
+    background-color: rgb(2, 4, 88);
     color: var(--tex-color);
     border: 1px solid rgb(2, 4, 88);
     padding: 10px 20px;
@@ -229,8 +313,8 @@ h1 a {
 }
 
 
-.botones>button{ 
-     /*comentarios covierte el elemmento en bloque
+.botones>button {
+    /*comentarios covierte el elemmento en bloque
       centra el boton
       cambia el fondo del boton
       cambia el color de la letra 
@@ -249,10 +333,13 @@ h1 a {
     border-radius: 12px;
     font-size: 10px;
     cursor: pointer;
-    left: 140px;}
+    left: 140px;
+}
 
 
 li>a {
+/* establece las normas que se tendrean todos los elementos a
+    que sean hijos directos de un li*/
     display: block;
     margin: 0 auto;
     background-color: rgb(2, 4, 88);
@@ -266,10 +353,7 @@ li>a {
     border-radius: 12px;
 }
 
-.botones {
-    position: relative;
-    z-index: 1;
-}
+
 
 .botones>button {
 
@@ -297,21 +381,8 @@ li>a {
 
 }
 
-li>a {
-    display: block;
-    margin: 0 auto;
-    background-color: rgb(2, 4, 88);
-    color: var(--tex-color);
-    border: 1px solid rgb(2, 4, 88);
-    padding: 10px 20px;
-    text-align: left;
-    text-decoration: none;
-    transition: background-color 2s, color 1s, border 3s;
-    border: none;
-    border-radius: 12px;
-}
-
 .botones {
+    /*da posiciones relativas faciles de mover a los botones*/
     position: relative;
     z-index: 1;
 }
@@ -319,103 +390,85 @@ li>a {
 
 
 
-
-li>a {
-    display: block;
-    margin: 0 auto;
-    background-color: rgb(2, 4, 88);
-    color: var(--tex-color);
-    border: 1px solid rgb(2, 4, 88);
-    padding: 10px 20px;
-    text-align: left;
-    text-decoration: none;
-    transition: background-color 2s, color 1s, border 3s;
-    border: none;
-    border-radius: 12px;
-}
-
-.botones {
-    position: relative;
-    z-index: 1;
-}
-
-
-
-a:hover{
-background-color: white;
-color: rgb(2, 159, 180) ;
-}
-.botones a:hover{
-background-color: white;
-color: rgb(2, 159, 180) ;
-}
-.botones>button:hover{
-
-background-color: white;
-color: rgb(2, 159, 180) ;
+a:hover {
+    /*a cambia de color caundo el mause*/
+    background-color: white;
+    color: rgb(2, 159, 180);
 }
 
 .botones a:hover {
+    /*cambia los botones que esten dentro de una clase botones*/
     background-color: white;
-    color:rgb(2, 4, 88);
+    color: rgb(2, 159, 180);
 }
 
+.botones>button:hover {
+ /*cambia los botones que esten dentro de una clase botones*/
+    background-color: white;
+    color: rgb(2, 159, 180);
+}
+
+
+
 .btn .elim>button:hover {
+    /*cambia los que el raton sobrepase de la clase btn y elim*/
     background-color: white;
     color: rgb(2, 4, 88);
 
 }
 
 .btn .Enviar>button:hover {
+     /*cambia los que el raton sobrepase de la clase btn y enviar*/
     background-color: white;
     color: rgb(2, 4, 88);
 }
 
-.botones>button:hover {
+.botones>button:hover { 
+    /*cambia los que el rason sobrepase de la bontes*/
     background-color: white;
     color: rgb(2, 4, 88);
 }
 
 
 #barra_lateral:target {
+    /*cuando se active el target de la barra lateral se a
+    */
     display: block;
     position: fixed;
 }
 
 .nav_list:first-child {
+    /*establece al primer hijo de nav_list para estilizar*/
     background-color: rgb(2, 4, 88);
 }
 
-.nav_list a:first-child {
-    background-color: rgb(2, 4, 88);
-}
-
-.nav_list:hover {
-    background-color: white;
-   color: rgb(2, 4, 88);
-}
 
 .nav_list a:hover {
+    /*hace que la varra tenga efectos*/
     background-color: white;
     color: rgb(2, 4, 88);
 }
 
 li>a:hover {
+    /*hace que la varra tenga efectos*/
     color: rgb(10, 12, 26);
     background-color: rgb(33, 31, 134);
     padding: 10%;
 }
 
 li>a::before {
+    /*pone un señalador antes de texto*/
     content: "👉";
 
 }
 
 .Subir>a::before {
     content: "👆";
+    /*pone un señalador antes del texto*/
 }
 
 nav li::after {
+    /*pone una linea despues de cada elemento de la lista*/
     content: "";
     display: block;
     width: 100%;
@@ -425,10 +478,12 @@ nav li::after {
 }
 
 nav li:last-child::after {
+    /*quita la linea del ultimo elemento de la lista*/
     display: none;
 }
 
 .botones::after {
+    /**/
     content: "";
     position: absolute;
     top: 6px;
@@ -441,9 +496,10 @@ nav li:last-child::after {
 }
 
 .comillas::before {
+    /*ubica las comillas antes del texto*/
     content: "❝";
     font-size: 4em;
-    color:var(#161718);
+    color: var(#161718);
     position: relative;
 
 
@@ -451,6 +507,7 @@ nav li:last-child::after {
 }
 
 .comillas::after {
+    /*ubica las comillas despues del texto*/
     content: "❞";
     font-size: 4em;
     color: var(#161718);
@@ -460,6 +517,7 @@ nav li:last-child::after {
 }
 
 .icono::before {
+    /*pone unos iconos antes del texto*/
     content: "🐠" "🐟" "🦀" "🦐";
     font-size: 2em;
     left: 10px;
