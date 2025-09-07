@@ -5,10 +5,16 @@
 }
 
 body {
-    background-color: rgb(6, 31, 80);
+    background-image: var(--color-primario);
     width: 800px;
     height: auto;
+}:root {
+    --color-primario: linear-gradient(90deg, #0c1b32, #122e60, #1678a7);
+    --colo--secundario: linear-gradient(90deg, #151a22, #0944ac, #063146);
+    --color--tema:linear-gradient(90deg, #161122,#00273e,#161122,#00273e,#161122);
+    --color--fellback: rgb(8, 100, 54);
 }
+
 
 .cabecera {
     display: flex;
@@ -26,11 +32,11 @@ body {
 .cuerpo {
     display: flexbox;
     margin: 0px auto;
-    background-color: rgba(11, 106, 119, 0.699);
+   background-image: var(--colo--secundario);
     padding: 1%;
     width: 90%;
     height: auto;
-    color: rgb(118, 199, 202);
+    color: rgb(206, 218, 217);
     font-style: italic;
     font-size: 15px;
     margin-left: 14em;
@@ -46,6 +52,7 @@ body {
     margin: 10px;
 }
 
+
 .img {
     border: 2px solid black;
     margin: 10px;
@@ -58,13 +65,25 @@ body {
     display: flex;
 }
 
+.contenido {
+
+    border: 2px solid black;
+    margin: 10px;
+
+}
+
+.pros_trans { 
+    margin: 10px;
+    display: flex;
+}
+
 .btn .elim>button {
     position: relative;
     display: block;
     margin: 0 auto;
-    background-color: rgb(2, 159, 180);
+    background-color: rgb(2, 4, 88);
     color: aliceblue;
-    border: 1px solid rgb(2, 159, 180);
+    border: 1px solid rgb(2, 4, 88);
     padding: 15px 10%;
     border-radius: 12px;
     font-size: 30px;
@@ -77,9 +96,9 @@ body {
     position: relative;
     display: block;
     margin: 0 auto;
-    background-color: rgb(2, 159, 180);
+    background-color: rgb(2, 4, 88);
     color: aliceblue;
-    border: 1px solid rgb(2, 159, 180);
+    border: 1px solid rgb(2, 4, 88);
     padding: 15px 10%;
     border-radius: 12px;
     font-size: 30px;
@@ -103,6 +122,43 @@ div.nav_list {
     width: 95%;
     height: 30px;
 }
+.card1 {
+    width: 300px;
+    background-color: var(--color--fellback);
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 20px;
+    box-shadow: -20px -20px 0px 0px #0d66db;
+    border-radius: 10px;
+    z-index: 2;
+
+}
+
+.card2 {
+    width: 300px;
+    background-image: var(--color--tema);
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 20px;
+    box-shadow: -20px -20px 0px 0px #08192e;
+    border-radius: 10px;
+    z-index: 2;
+}
+.card3{
+    width: 300px;
+    background-image: var(--colo--secundario);
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 20px;
+    box-shadow: -20px -20px 0px 0px #6d0ddb;
+    border-radius: 10px;
+    position: absolute;
+    top: 15%;
+    left: 82%;
+    transform: translate(-50%, -50%)
+    
+
+}
 
 #barra_lateral {
     margin: -15px;
@@ -115,7 +171,7 @@ div.nav_list {
 
 #barra_lateral>ul {
     color: rgb(218, 228, 230);
-    background-color: rgb(2, 159, 180);
+    background-color:rgb(2, 4, 88);
     padding: 10px;
     border-radius: 10px;
     list-style: none;
@@ -125,9 +181,9 @@ h1 a {
 
     display: block;
     margin: 0 auto;
-    background-color: rgb(2, 159, 180);
+    background-color:rgb(2, 4, 88);
     color: aliceblue;
-    border: 1px solid rgb(2, 159, 180);
+    border: 1px solid rgb(2, 4, 88);
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -139,9 +195,9 @@ h1 a {
 li>a {
     display: block;
     margin: 0 auto;
-    background-color: rgb(2, 159, 180);
+    background-color: rgb(2, 4, 88);
     color: aliceblue;
-    border: 1px solid rgb(2, 159, 180);
+    border: 1px solid rgb(2, 4, 88);
     padding: 10px 20px;
     text-align: left;
     text-decoration: none;
@@ -168,9 +224,9 @@ li>a {
     position: relative;
     display: block;
     margin: 0 auto;
-    background-color: rgb(2, 159, 180);
+    background-color: rgb(2, 4, 88);
     color: aliceblue;
-    border: 1px solid rgb(2, 159, 180);
+    border: 1px solid rgb(2, 4, 88);
     padding: 10px 20px;
     border-radius: 12px;
     font-size: 10px;
@@ -183,22 +239,22 @@ li>a {
 
 .botones a:hover {
     background-color: white;
-    color: rgb(2, 159, 180);
+    color:rgb(2, 4, 88);
 }
 
 .btn .elim>button:hover {
     background-color: white;
-    color: rgb(2, 159, 180);
+    color: rgb(2, 4, 88);
 }
 
 .btn .Enviar>button:hover {
     background-color: white;
-    color: rgb(2, 159, 180);
+    color: rgb(2, 4, 88);
 }
 
 .botones>button:hover {
     background-color: white;
-    color: rgb(2, 159, 180);
+    color: rgb(2, 4, 88);
 }
 
 
@@ -208,26 +264,26 @@ li>a {
 }
 
 .nav_list:first-child {
-    background-color: rgb(2, 56, 63);
+    background-color: rgb(2, 4, 88);
 }
 
 .nav_list a:first-child {
-    background-color: rgb(2, 56, 63);
+    background-color: rgb(2, 4, 88);
 }
 
 .nav_list:hover {
     background-color: white;
-    color: rgb(2, 159, 180);
+   color: rgb(2, 4, 88);
 }
 
 .nav_list a:hover {
     background-color: white;
-    color: rgb(2, 159, 180);
+    color: rgb(2, 4, 88);
 }
 
 li>a:hover {
-    color: rgb(10, 24, 26);
-    background-color: rgb(2, 56, 63);
+    color: rgb(10, 12, 26);
+    background-color: rgb(33, 31, 134);
     padding: 10%;
 }
 
@@ -292,33 +348,6 @@ nav li:last-child::after {
     transform: translateY(-50%);
 }
 
-.contenido {
-    position: relative;
-    margin: o auto;
-    width: 100%;
-    border: 2px black solid;
 
-}
 
-.card1 {
-    width: 300px;
-    background-color: rgb(22, 4, 122);
-    margin: 0 auto;
-    margin-top: 60px;
-    padding: 20px;
-    box-shadow: -20px -20px 0px 0px #0d66db;
-    border-radius: 10px;
-    z-index: 2;
 
-}
-
-.card2 {
-    width: 300px;
-    background-color: rgb(14, 56, 35);
-    margin: 0 auto;
-    margin-top: 60px;
-    padding: 20px;
-    box-shadow: -20px -20px 0px 0px #08192e;
-    border-radius: 10px;
-    z-index: 2;
-}
