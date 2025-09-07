@@ -8,11 +8,27 @@ body {
     background-image: var(--color-primario);
     width: 800px;
     height: auto;
-}:root {
+    
+}
+@media(prefers-color-scheme: light){
+    :root{
+        --bg-color:linear-gradient(90deg, #0c1b32, #122e60, #1678a7);;
+        --tex-color: rgb(166, 180, 180);
+    }
+}
+
+@media(prefers-color-scheme: dark){
+    :root{
+        --bg-color:linear-gradient(90deg, #161122,#00273e,#161122,#00273e,#161122);
+        --tex-color: rgb(166, 180, 180);
+    }
+
+}
+ :root{
     --color-primario: linear-gradient(90deg, #0c1b32, #122e60, #1678a7);
     --colo--secundario: linear-gradient(90deg, #151a22, #0944ac, #063146);
     --color--tema:linear-gradient(90deg, #161122,#00273e,#161122,#00273e,#161122);
-    --color--fellback: rgb(8, 100, 54);
+    --color--fellback: rgb(8, 100, 54)
 }
 
 
@@ -36,7 +52,7 @@ body {
     padding: 1%;
     width: 90%;
     height: auto;
-    color: rgb(206, 218, 217);
+    color:var(--tex-color);
     font-style: italic;
     font-size: 15px;
     margin-left: 14em;
@@ -58,6 +74,7 @@ body {
     margin: 10px;
 
 }
+
 
 .btn {
     border: 2px solid black;
@@ -82,7 +99,7 @@ body {
     display: block;
     margin: 0 auto;
     background-color: rgb(2, 4, 88);
-    color: aliceblue;
+    color:var(--tex-color);
     border: 1px solid rgb(2, 4, 88);
     padding: 15px 10%;
     border-radius: 12px;
@@ -91,13 +108,20 @@ body {
     top: 0;
     left: 100px;
 }
+.ult_punt{
+     border: 2px solid black;
+    margin: 10px;
+    padding: auto;
+
+ }
+ 
 
 .btn .Enviar>button {
     position: relative;
     display: block;
     margin: 0 auto;
     background-color: rgb(2, 4, 88);
-    color: aliceblue;
+    color:var(--tex-color);
     border: 1px solid rgb(2, 4, 88);
     padding: 15px 10%;
     border-radius: 12px;
@@ -145,13 +169,16 @@ div.nav_list {
     z-index: 2;
 }
 .card3{
+    --card-padding:20px;
+    --card-border-radius:10px;
+
     width: 300px;
     background-image: var(--colo--secundario);
     margin: 0 auto;
     margin-top: 60px;
-    padding: 20px;
+    padding: var(--card-padding);
     box-shadow: -20px -20px 0px 0px #6d0ddb;
-    border-radius: 10px;
+    border-radius: var(--card-border-radius);
     position: absolute;
     top: 15%;
     left: 82%;
@@ -159,6 +186,15 @@ div.nav_list {
     
 
 }
+.card4{
+     width: 300px;
+    background-image: var(--colo--secundario);
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 20px;
+    box-shadow: -20px -20px 0px 0px #6d0ddb;
+    border-radius: 10px;
+ }
 
 #barra_lateral {
     margin: -15px;
@@ -170,7 +206,7 @@ div.nav_list {
 }
 
 #barra_lateral>ul {
-    color: rgb(218, 228, 230);
+    color: var(--tex-color);
     background-color:rgb(2, 4, 88);
     padding: 10px;
     border-radius: 10px;
@@ -182,7 +218,7 @@ h1 a {
     display: block;
     margin: 0 auto;
     background-color:rgb(2, 4, 88);
-    color: aliceblue;
+    color: var(--tex-color);
     border: 1px solid rgb(2, 4, 88);
     padding: 10px 20px;
     text-align: center;
@@ -196,7 +232,7 @@ li>a {
     display: block;
     margin: 0 auto;
     background-color: rgb(2, 4, 88);
-    color: aliceblue;
+    color: var(--tex-color);
     border: 1px solid rgb(2, 4, 88);
     padding: 10px 20px;
     text-align: left;
@@ -225,7 +261,7 @@ li>a {
     display: block;
     margin: 0 auto;
     background-color: rgb(2, 4, 88);
-    color: aliceblue;
+    color: var(--tex-color);
     border: 1px solid rgb(2, 4, 88);
     padding: 10px 20px;
     border-radius: 12px;
@@ -324,7 +360,7 @@ nav li:last-child::after {
 .comillas::before {
     content: "❝";
     font-size: 4em;
-    color: black;
+    color:var(#161718);
     position: relative;
 
 
@@ -334,7 +370,7 @@ nav li:last-child::after {
 .comillas::after {
     content: "❞";
     font-size: 4em;
-    color: black;
+    color: var(#161718);
     position: relative;
     margin-left: 10em;
 
