@@ -147,6 +147,7 @@ textarea:first-of-type{
 :root{
     --color_de_fondo: rgb(6, 31, 80);
 }
-input[type="text"]:focus{
-    border: 2px solid green;
+input:focus{
+    outline: none;
+    border: 2px solid  rgb(9, 155, 82);
 }
