@@ -4,19 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    /*
-    pongo una variable de fondo
-    establesco el ancho de la pagina
-    pongo la altura en automatico
-    */
-    background-image: var(--color-primario);
-    width: 800px;
-    height: auto;
-
-}
-
 @media(prefers-color-scheme: light) {
 
     /*
@@ -40,6 +27,25 @@ body {
     }
 
 }
+body {
+    /*
+    pongo una variable de fondo
+    establesco el ancho de la pagina
+   establesco la altura de la pagina
+    */
+    background-image: var(--color-primario);
+    max-width: 50vw;
+    max-height: 80vh;
+    margin: 0 auto;
+   
+}
+main{
+   
+     width: 85%;
+    height: 100%;
+}
+
+
 
 :root {
     /*color declarados en variables*/
@@ -72,6 +78,9 @@ y la altura al 100%
     Establece los márgenes laterales automáticos para centrar el elemento horizontalmente
     */
     margin: 10px;
+}
+div.botones{
+    margin-left: 10px;
 }
 
 .cuerpo {
@@ -218,8 +227,9 @@ div.nav_list {
     y hacia arriba 2 pielesx
     transision de 0.3 segundos*/
     position: relative;
-    left: 20px;
-    top: 2px;
+    left: 2.5%;
+    top: auto;
+    width: 95%;
     transition: all 0.3s ease;
 }
 
@@ -384,7 +394,7 @@ li>a {
 .botones {
     /*da posiciones relativas faciles de mover a los botones*/
     position: relative;
-    z-index: 1;
+
 }
 
 
